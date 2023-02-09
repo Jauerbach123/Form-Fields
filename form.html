@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kilgores Classroom- International Class that Doesn’t Stink</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+
+
+
+	<script> 
+	
+	function clearNumber() {
+		if (document.getElementById('phoneField').value== 'example: 212-123-1234') {
+			document.getElementById('phoneField').value= '';
+		}
+	}
+	function ResetNumber() {
+		if (document.getElementById('phoneField').value== '') {
+			document.getElementById('phoneField').value= 'example: 212-123-1234';
+		}
+	}
+	function clearName() {
+		if (document.getElementById('nameField').value== 'First and Last Name') {
+			document.getElementById('nameField').value= '';
+		}
+	}
+		function ResetName() {
+		if (document.getElementById('nameField').value == '') {
+			document.getElementById('nameField').value = 'First and Last Name';
+		}
+	}
+	</script>
+</head>
+<body>
+<header>
+	<div class="contentWrapper">
+		<div id="fronionLogo">
+			<img src="Untitled Design.png" width="250" alt="The Fronion: News That Doesn’t Stink">
+		</div>
+	</div>
+</header>
+<main role="main">
+	<div class="contentWrapper">
+		<form action="" method="post" name="signUpForm" id="signUpForm">
+			<fieldset id="signUp">
+				<legend>Sign Up For Text Alerts</legend>
+
+					<label for="nameField">Name:</label>
+					<input id="nameField" name="nameField" type="text" class="textfield" value="First and Last Name" onfocus="clearName();" onblur="ResetName();"> 
+				
+
+					<label for="phoneField">Phone:</label>
+					<input id="phoneField" name="phoneField" type="text" class="textfield" value="example: 212-123-1234" onfocus="clearNumber();" onblur="ResetNumber();"> 
+				
+
+					<input id="submit" type="submit" name="submit" value="Sign Me Up!">
+
+			</fieldset
+		</form>
+	</div>
+</main>
+<footer>
+	<div class="contentWrapper">Copyright The Fronion - All Rights Reserved</div>
+</footer>
+</body>
+</html>
